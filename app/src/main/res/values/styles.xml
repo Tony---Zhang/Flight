@@ -12,7 +12,7 @@
         <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="metaButtonBarButtonStyle">@style/FlightButtonStyle</item>
     </style>
 
     <style name="FullscreenActionBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
@@ -22,6 +22,13 @@
     <style name="FullscreenActionBarStyle.Pop" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:background">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="FlightButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/item_color_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
     </style>
 
     <style name="FontHuge" parent="TextAppearance.AppCompat.Display1">
@@ -42,6 +49,8 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
-
+    <style name="FontNormal">
+        <item name="android:textSize">18sp</item>
+    </style>
 
 </resources>
