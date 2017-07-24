@@ -31,18 +31,18 @@
         <item name="android:fontFamily">sans-serif-regular</item>
     </style>
 
-    <style name="FontHuge" parent="TextAppearance.AppCompat.Display1">
+    <style name="FontHuge" parent="TextAppearance.AppCompat.Display3">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">36sp</item>
+        <item name="android:textSize">56sp</item>
     </style>
 
     <style name="FontHuge.White">
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
-    <style name="FontLarge" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textSize">20sp</item>
+    <style name="FontLarge" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">28sp</item>
     </style>
 
     <style name="FontLarge.White">
