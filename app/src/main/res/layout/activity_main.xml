@@ -59,7 +59,8 @@
             android:layout_height="?actionBarSize"
             android:layout_marginTop="20dp"
             app:navigationIcon="@drawable/ic_clear_white_36dp"
-            app:popupTheme="@style/FullscreenActionBarStyle.Pop" />
+            app:popupTheme="@style/FullscreenActionBarStyle.Pop"
+            app:theme="@style/FullscreenActionBarStyle" />
 
         <TextView
             style="@style/FontLarge.White"

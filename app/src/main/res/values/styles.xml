@@ -19,7 +19,10 @@
         <item name="android:background">@color/colorTransparent</item>
     </style>
 
-    <style name="FullscreenActionBarStyle.Pop" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="FullscreenActionBarStyle.Pop" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
 
     <style name="FontHuge" parent="TextAppearance.AppCompat.Display1">
         <item name="android:fontFamily">sans-serif-medium</item>
