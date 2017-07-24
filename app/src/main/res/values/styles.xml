@@ -1,0 +1,44 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/colorTransparent</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle.Pop" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="FontHuge" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="FontHuge.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FontLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FontLarge.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+
+</resources>
