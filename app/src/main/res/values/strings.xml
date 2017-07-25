@@ -4,6 +4,7 @@
     <string name="action_setting">Setting</string>
 
     <string name="btn_check_in">Check In</string>
+    <string name="btn_fire">Fire</string>
 
     <string name="airport_jfk">jfk</string>
     <string name="airport_sfo">sfo</string>
