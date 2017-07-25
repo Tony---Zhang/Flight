@@ -7,8 +7,10 @@
     tools:context="com.example.shuaiz.flight.SearchResultActivity">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_result_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/buttonBarLayout"
         app:layout_constraintTop_toTopOf="parent" />
 
