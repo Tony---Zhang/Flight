@@ -31,4 +31,5 @@ ext {
     rxJavaVersion = '2.1.2'
     rxAndroidVersion = '2.0.1'
     constraintVersion = '1.0.2'
+    gsonVersion = '2.8.1'
 }
