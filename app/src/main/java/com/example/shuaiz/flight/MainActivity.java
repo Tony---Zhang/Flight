@@ -7,9 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String BUNDLE_KEY_START = "start";
+    public static final String BUNDLE_KEY_END = "end";
+
+    private TextView flightStartText;
+    private TextView flightEndText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_IMMERSIVE);
         setupToolbar();
+        initViews();
+        initData();
     }
 
     @Override
@@ -45,5 +53,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
+
+    private void initViews() {
+        flightStartText = findViewById(R.id.flight_start);
+        flightEndText = findViewById(R.id.flight_end);
+    }
+
+    private void initData() {
+        final String start = getIntent().getStringExtra(BUNDLE_KEY_START);
+        final String end = getIntent().getStringExtra(BUNDLE_KEY_END);
+
+        flightStartText.setText(start);
+        flightEndText.setText(end);
     }
 }

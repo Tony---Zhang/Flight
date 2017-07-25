@@ -1,14 +1,13 @@
 package com.example.shuaiz.flight;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 public class SearchResultActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
     private SearchResultAdapter adapter = new SearchResultAdapter();
 
     @Override
@@ -25,7 +24,7 @@ public class SearchResultActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        recyclerView = findViewById(R.id.search_result_list);
+        RecyclerView recyclerView = findViewById(R.id.search_result_list);
         recyclerView.setHasFixedSize(true);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -33,7 +32,7 @@ public class SearchResultActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        Flight[] data = new Flight[]{new Flight("jfk", "sfo"), new Flight("sfo", "jfk")};
+        Flight[] data = new Flight[]{new Flight("jfk", "sfo"), new Flight("sfo", "jfk"), new Flight("med", "app")};
         adapter.setData(data);
         adapter.notifyDataSetChanged();
     }

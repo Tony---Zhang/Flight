@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/padding_content">
+
+        <ImageView
+            android:id="@+id/flight_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@drawable/ic_flight_white_48dp"
+            android:src="@drawable/ic_flight_white_48dp" />
+
+        <TextView
+            android:id="@+id/flight_start"
+            style="@style/FontLarge.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/flight_icon"
+            android:textAllCaps="true"
+            tools:text="@string/airport_jfk" />
+
+        <TextView
+            android:id="@+id/flight_end"
+            style="@style/FontLarge.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/flight_start"
+            android:layout_below="@id/flight_start"
+            android:textAllCaps="true"
+            tools:text="@string/airport_sfo" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
